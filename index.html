@@ -10,14 +10,28 @@
   <body>
     <div class="form-pokedex">
       <h1>Busca un pokemon</h1>
-      <label for="">Inserta tu pokemon</label>
+      <label for="">Inserta tu pokemon:</label>
       <input type="text" id="pokemon" />
       <button>Ingresa</button>
     </div>
     <div class="pokedex">
       <div class="pokemon">
-        <h1 class="namePoke"></h1>
-        <img src="" class="imgPoke" />
+        <div class="poke-selected box">
+          <h1 class="namePoke"></h1>
+          <img src="" class="imgPoke" />
+        </div>
+        <div class="type-poke box">
+          <h1>Tipo</h1>
+          <ul class="tipos"></ul>
+        </div>
+        <div class="estadisticas-poke box">
+          <h1>Estadisticas</h1>
+          <ul class="poke-esta"></ul>
+        </div>
+        <div class="div-moves box">
+          <h1>Movimientos</h1>
+          <ul class="movimientos"></ul>
+        </div>
       </div>
     </div>
   </body>

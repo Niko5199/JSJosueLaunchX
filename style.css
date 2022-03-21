@@ -1,0 +1,68 @@
+body {
+  font-family: monospace;
+  background: rgb(255, 248, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 248, 0, 1) 0%,
+    rgba(121, 9, 9, 1) 53%,
+    rgba(255, 0, 0, 1) 100%
+  );
+  color: white;
+}
+
+ul {
+  list-style: none;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  padding: 20px;
+}
+.form-pokedex {
+  display: block;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.form-pokedex button {
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.pokemon {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.poke-selected {
+  display: block;
+  /* margin-top: 15px; */
+}
+
+.poke-selected img {
+  width: 100px;
+}
+.pokemon .div-moves ul {
+  list-style: none;
+  font-weight: bold;
+}
+
+.pokemon .movimientos li {
+  margin-top: 10px;
+}
+
+.box {
+  display: block;
+  margin: 20px;
+  width: 25%;
+  border: 1px solid white;
+  text-align: center;
+  height: 300px;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+  border-radius: 10%;
+}
+
+.box h1 {
+  font-style: italic;
+}

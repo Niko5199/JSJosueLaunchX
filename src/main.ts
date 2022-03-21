@@ -1,5 +1,5 @@
 import { InterPoke } from './interfaces/pokemon';
-import { renderPokemon } from './render/renderPokemon';
+import renderPokemon from './render/renderPokemon';
 
 const btnInput = document.querySelector('button') as HTMLButtonElement;
 const inputPokemon = document.querySelector('#pokemon') as HTMLInputElement;
@@ -14,5 +14,10 @@ const pokemon = function (name: string): Promise<InterPoke> {
 };
 
 btnInput.addEventListener('click', function () {
-  pokemon(inputPokemon.value).then(data => renderPokemon(data));
+  pokemon(inputPokemon.value.toLowerCase())
+    .then((data: InterPoke) => {
+      console.log(data);
+      renderPokemon(data);
+    })
+    .catch((error: Error) => alert(`${error.message}`));
 });
